@@ -89,7 +89,7 @@ define('NONCE_SALT',       'jQlTO`I0>[+D}-R-E@{9z,`Co$KLgVm^)jj!.9K9*S+BkwY];a{e
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = $_ENV['MYSQL_PREFIX'] ?? getenv_docker('WORDPRESS_TABLE_PREFIX', 'wp_');
+$table_prefix = getenv_docker('DB_TABLE_PREFIX', 'wp_');
 
 // TESTING HERE AGAIN conflict
 
