@@ -42,7 +42,7 @@ if (!function_exists('getenv_docker')) {
  */
 define( 'DB_NAME', getenv_docker('DB_NAME', 'project') );
 define( 'DB_USER', getenv_docker('DB_USER', 'project') );
-define( 'DB_PASSWORD', getenv_docker('DB_PASSWORD', 'project') );
+define( 'DB_PASSWORD', getenv_docker('DB_PASSWORD', '') );
 define( 'DB_HOST', getenv_docker('DB_HOST', 'localhost') );
 
 // Set to false to use minified JS & CSS
@@ -89,7 +89,7 @@ define('NONCE_SALT',       'jQlTO`I0>[+D}-R-E@{9z,`Co$KLgVm^)jj!.9K9*S+BkwY];a{e
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = getenv_docker('DB_TABLE_PREFIX', 'wp_');
+$table_prefix = getenv_docker('DB_TABLE_PREFIX', 'sdg_');
 
 // TESTING HERE AGAIN conflict
 
